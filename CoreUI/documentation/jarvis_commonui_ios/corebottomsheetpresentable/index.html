@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    
+    <title>CoreBottomSheetPresentable| Documentation</title>
+    
+    <link rel="icon"       href="../../../favicon.ico" />
+    <link rel="mask-icon"  href="../../../favicon.svg" color="#333333" />
+    <link rel='stylesheet' href='../../../css/site.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="doc-topic">
+        <nav role="navigation" class="nav documentation-nav">
+  <div class="nav__wrapper">
+    <div class="nav__background"></div>
+    <div class="nav-content">
+      <div class="nav-title">
+        <span class="nav-title-link inactive">Documentation</span>
+      </div>
+      <div class="nav-menu">
+        <div class="nav-menu-tray">
+          <ul class="nav-menu-items hierarchy">
+            
+              <li class="nav-menu-item hierarchy-item">
+                
+                
+                  <a href="../index.html" class="item">jarvis_commonUI_ios</a>
+                
+              </li>
+            
+              <li class="nav-menu-item hierarchy-item">
+                
+                  <span class="current item">CoreBottomSheetPresentable</span>
+                
+                
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main" role="main" class="main">
+  <div class="topictitle">
+  <span class="eyebrow">Protocol</span>
+  <h1 class="title">CoreBottomSheetPresentable</h1>
+</div>
+
+  <div class="container content-grid">
+  <div class="description">
+    <div class="abstract content">
+      This is the configuration object for a view controller that will be presented using the CoreBottomSheet transition.
+    </div>
+  </div>
+  
+  <!-- The sidebar once we have one: <div class="summary"></div> -->
+  
+  <div class="primary-content">
+    <section id='declaration' class='declaration'>
+  <h2>Declaration</h2>
+  <div class='declaration-group'>
+    <pre class='source indented'><code><span class='token-keyword'>protocol</span> <span class='token-identifier'>CoreBottomSheetPresentable</span> : AnyObject</code></pre>
+  </div>
+</section>
+<div class='content'><h2 id='overview'>Overview</h2><p>Usage:</p><div data-syntax="" class="code-listing">
+  <div class="container-general">
+    <pre><code><span class="code-line-container"><span data-line-number="1" class="code-number" style="display: none;"></span><span class="code-line">extension YourViewController: CoreBottomSheetPresentable {</span></span>
+<span class="code-line-container"><span data-line-number="2" class="code-number" style="display: none;"></span><span class="code-line">func shouldRoundTopCorners: Bool { return false }</span></span>
+<span class="code-line-container"><span data-line-number="3" class="code-number" style="display: none;"></span><span class="code-line">}</span></span>
+</code></pre>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+  
+  <section id='topics' class='contenttable alt-light'>
+  <div class='container'>
+    <h2 class='title'>Topics</h2>
+
+    
+      <div class="row contenttable-section">
+        <div class="col section-title large-3 medium-3 small-12">
+          <h3 class="title">Instance Properties</h3>
+        </div>
+  
+        <div class="col section-content large-9 medium-9 small-12">
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/allowsDragToDismiss-51b2x.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>allowsDragToDismiss</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to determine if dismissal should be initiated when swiping down on the presented view.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/allowsExtendedPanScrolling-r3zk.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>allowsExtendedPanScrolling</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to determine if scrolling should seamlessly transition from the bottomsheet container view to the embedded scroll view once the scroll limit has been reached.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/allowsTapToDismiss-3c9ng.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>allowsTapToDismiss</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to determine if dismissal should be initiated when tapping on the dimmed background view.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/anchorModalToLongForm-6nhzz.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>anchorModalToLongForm</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to determine if scrolling should be limited to the longFormHeight. Return false to cap scrolling at .max height.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetBackgroundColor-2nz29.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetBackgroundColor</span><span class='decorator'>: </span><span class='decorator'>UIColor</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The background view color.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetScrollView.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetScrollView</span><span class='decorator'>: </span><span class='decorator'>UIScrollView</span><span class='decorator'>?</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The scroll view embedded in the view controller. Setting this value allows for seamless transition scrolling between the embedded scroll view and the bottom sheet container view.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/cornerRadius-2payz.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>cornerRadius</span><span class='decorator'>: </span><span class='decorator'>CGFloat</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The corner radius used when <code>shouldRoundTopCorners</code> is enabled.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/dragIndicatorBackgroundColor-4ne77.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>dragIndicatorBackgroundColor</span><span class='decorator'>: </span><span class='decorator'>UIColor</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The drag indicator view color.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/isHapticFeedbackEnabled-30hci.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>isHapticFeedbackEnabled</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to determine if haptic feedback should be enabled during presentation.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/isUserInteractionEnabled-4sd5q.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>isUserInteractionEnabled</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to toggle user interactions on the container view.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/longFormHeight-8xe1.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>longFormHeight</span><span class='decorator'>: </span><span class='decorator'>CoreBottomSheetHeight</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The height of the bottomsheet container view when in the longForm presentation state.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/scrollIndicatorInsets-6f727.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>scrollIndicatorInsets</span><span class='decorator'>: </span><span class='decorator'>UIEdgeInsets</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">We configure the bottomSheetScrollView’s scrollIndicatorInsets interally so override this value to set custom insets.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/shortFormHeight-5gguf.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>shortFormHeight</span><span class='decorator'>: </span><span class='decorator'>CoreBottomSheetHeight</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The height of the bottomsheet container view when in the shortForm presentation state.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/shouldRoundTopCorners-1syv9.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>shouldRoundTopCorners</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to determine if the top corners should be rounded.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/showDragIndicator-8l031.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>showDragIndicator</span><span class='decorator'>: </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A flag to determine if a drag indicator should be shown above the bottomsheet container view.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/springDamping-9puiz.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>springDamping</span><span class='decorator'>: </span><span class='decorator'>CGFloat</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The springDamping value used to determine the amount of ‘bounce’ seen when transitioning to short/long form.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/topOffset-67vaj.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>topOffset</span><span class='decorator'>: </span><span class='decorator'>CGFloat</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The offset between the top of the screen and the top of the bottomsheet container view.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/transitionAnimationOptions-2lhf4.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>transitionAnimationOptions</span><span class='decorator'>: </span><span class='decorator'>UIView</span><span class='decorator'>.</span><span class='decorator'>AnimationOptions</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The animation options used when performing animations on the CoreBottomSheet, utilized mostly during a transition.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/transitionDuration-5jmmp.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>var</span><span class='decorator empty-token'> </span><span class='identifier'>transitionDuration</span><span class='decorator'>: </span><span class='decorator'>Double</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">The transitionDuration value is used to set the speed of animation during a transition, including initial presentation.</div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="row contenttable-section">
+        <div class="col section-title large-3 medium-3 small-12">
+          <h3 class="title">Instance Methods</h3>
+        </div>
+  
+        <div class="col section-content large-9 medium-9 small-12">
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetAnimate(_:_:).html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetAnimate</span><span class='decorator'>(</span><span class='decorator'>Self</span><span class='decorator'>.</span><span class='decorator'>AnimationBlockType</span><span class='decorator'>, </span><span class='decorator'>Self</span><span class='decorator'>.</span><span class='decorator'>AnimationCompletionType</span><span class='decorator'>?)</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A function wrapper over the animate function in CoreBottomSheetAnimator.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetDidDismiss()-1i8w8.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetDidDismiss</span><span class='decorator'>()</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Notifies the delegate after the bottomsheet is dismissed.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetPerformUpdates(_:).html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetPerformUpdates</span><span class='decorator'>(() -&gt; </span><span class='decorator'>Void</span><span class='decorator'>)</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Operations on the scroll view, such as content height changes, or when inserting/deleting rows can cause the bottomsheet to jump, caused by the bottomsheet responding to content offset changes.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetSetNeedsLayoutUpdate().html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetSetNeedsLayoutUpdate</span><span class='decorator'>()</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A function wrapper over the <code>setNeedsLayoutUpdate()</code> function in the CoreBottomSheetPresentationController.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetTransition(to:).html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetTransition</span><span class='decorator'>(</span><span class='decorator'>to</span><span class='decorator'>: </span><span class='decorator'>CoreBottomSheetPresentationController</span><span class='decorator'>.</span><span class='decorator'>PresentationState</span><span class='decorator'>)</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">A function wrapper over the <code>transition(to state: CoreBottomSheetPresentationController.PresentationState)</code> function in the CoreBottomSheetPresentationController.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/bottomSheetWillDismiss()-5noev.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>bottomSheetWillDismiss</span><span class='decorator'>()</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Notifies the delegate that the bottomsheet is about to be dismissed.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/shouldPrioritize(CoreBottomSheetGestureRecognizer:)-5l839.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>shouldPrioritize</span><span class='decorator'>(</span><span class='decorator'>CoreBottomSheetGestureRecognizer</span><span class='decorator'>: </span><span class='decorator'>UIPanGestureRecognizer</span><span class='decorator'>) -&gt; </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Asks the delegate if the bottomsheet gesture recognizer should be prioritized.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/shouldRespond(to:)-1hzq6.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>shouldRespond</span><span class='decorator'>(</span><span class='decorator'>to</span><span class='decorator'>: </span><span class='decorator'>UIPanGestureRecognizer</span><span class='decorator'>) -&gt; </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Asks the delegate if the bottomsheet should respond to the bottomsheet gesture recognizer.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/shouldTransition(to:)-2ai6z.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>shouldTransition</span><span class='decorator'>(</span><span class='decorator'>to</span><span class='decorator'>: </span><span class='decorator'>CoreBottomSheetPresentationController</span><span class='decorator'>.</span><span class='decorator'>PresentationState</span><span class='decorator'>) -&gt; </span><span class='decorator'>Bool</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Asks the delegate if the bottomsheet should transition to a new state.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/willRespond(to:)-1l1px.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>willRespond</span><span class='decorator'>(</span><span class='decorator'>to</span><span class='decorator'>: </span><span class='decorator'>UIPanGestureRecognizer</span><span class='decorator'>)</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Notifies the delegate when the bottomsheet gesture recognizer state is either <code>began</code> or <code>changed</code>. This method gives the delegate a chance to prepare for the gesture recognizer state change.</div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/willTransition(to:)-2fq0w.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>func</span><span class='decorator empty-token'> </span><span class='identifier'>willTransition</span><span class='decorator'>(</span><span class='decorator'>to</span><span class='decorator'>: </span><span class='decorator'>CoreBottomSheetPresentationController</span><span class='decorator'>.</span><span class='decorator'>PresentationState</span><span class='decorator'>)</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">Notifies the delegate that the bottomsheet is about to transition to a new state.</div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="row contenttable-section">
+        <div class="col section-title large-3 medium-3 small-12">
+          <h3 class="title">Type Aliases</h3>
+        </div>
+  
+        <div class="col section-content large-9 medium-9 small-12">
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/AnimationBlockType.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>typealias</span><span class='decorator empty-token'> </span><span class='identifier'>AnimationBlockType</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content"></div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/AnimationCompletionType.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>typealias</span><span class='decorator empty-token'> </span><span class='identifier'>AnimationCompletionType</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content"></div>
+              </div>
+            </div>
+          
+            <div class="link-block topic">
+              
+                <a href="../../../documentation/jarvis_commonUI_ios/CoreBottomSheetPresentable/LayoutType.html" class="link has-adjacent-elements">
+                  <code class="decorated-title"><span class='decorator'>typealias</span><span class='decorator empty-token'> </span><span class='identifier'>LayoutType</span></code>
+                </a>
+              
+              
+              <div class="abstract">
+                <div class="content">For Presentation, the object must be a UIViewController &amp; confrom to the CoreBottomSheetPresentable protocol.</div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+  
+</main>
+
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
